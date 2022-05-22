@@ -1,5 +1,5 @@
 package com.masai;
-
+//second assignment
 public class Demo {
 	String s;
 	int i;
