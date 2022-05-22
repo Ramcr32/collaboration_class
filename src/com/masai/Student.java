@@ -31,17 +31,24 @@ public class Student {
 		this.name = name;
 	}
 	public int getAge() {
-		return age;
+		if(age>18 && age<60) {
+			return age;
+		}
+		else {
+			return -1;
+		}
+		
 	}
 	public void setAge(int age) {
-		if(age>18 && age<60) {
-			this.age = age;
-		}
+		this.age=age;
 		
 		
 	}
 	public int getMarks() {
-		return marks;
+		if(marks>0 && marks<500)
+			return marks;
+		else 
+			return -1;
 	}
 	public void setMarks(int marks) {
 		this.marks = marks;
@@ -51,7 +58,7 @@ public class Student {
 		System.out.println("Roll is :"+roll);
 		System.out.println("Name is :"+name);
 		System.out.println("Marks is :"+marks);
-		System.out.println("age is:"+age);
+		System.out.println("Age is:"+age);
 		}
 	
 }
